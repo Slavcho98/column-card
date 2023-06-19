@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container {
+    display: flex;
+    padding: 150px;
+}
+
+.cards {
+    display: flex;
+    }
+
+.card-1 {
+    background-color: hsl(31, 77%, 52%);
+    width: 250px;
+    padding: 2rem .4rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.card-2 {
+   background-color:  hsl(184, 100%, 22%);
+   width: 250px;
+   padding: 2rem .5rem;
+}
+
+.card-3 {
+    background-color: hsl(179, 100%, 13%);
+    width: 250px;
+    padding: 2rem .5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.cards img {
+    width: 80px;
+    padding-left: 30px;
+    margin-bottom: 1.2rem;
+}
+
+.cards h1 {
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    padding-top: 10px;
+    padding-left: 30px;
+    font-size: 2rem;
+}
+
+.cards p {
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: 25px;
+    line-height: 1.5;
+    font-size: 0.8rem;
+    margin-bottom: 4rem;
+}
+
+.hero-btn {
+  border: 2px solid #fff;
+  background-color: transparent;
+  padding: 0.7rem 1.5rem;
+  border-radius: 3rem;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-left: 1.4rem;
+}
+
+.hero-btn:hover {
+    border: 2px solid white;
+    background: #fff;
+    color: black;
+}
+
+
+.cards a {
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    text-decoration: none;
+    color: hsl(0, 0%, 95%);
+}
+
+@media (max-width: 600px) {
+     .cards {
+        flex-wrap: wrap;
+    }
+
+    .card-1 {
+        border-radius: 0;
+    }
+
+    .card-2 {
+        border-radius: 0;
+    }
+
+    .card-3 {
+        border-radius: 0;
+    }
+}
